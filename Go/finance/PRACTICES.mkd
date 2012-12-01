@@ -1,0 +1,99 @@
+# Practices
+
+-   If at the end of each month we place 10.000 in an account,
+    how much will we have accumulated at the end of 5 years,
+    if we get paid in a monthly rate of 18% per year?
+
+    Data:
+    -   Monthly payment of 10.000
+    -   Annual Interest Rate of 18% (0.18/12 = 0.015)
+    -   Number of periods: 5 years * 12 months = 60 months.
+
+    Solution:
+
+        FutureValue -f 10000 -r 0.015 -n 60
+        962146.5171
+
+    The Future Value of the Annuity is: _962.146,5171_
+
+-   What ammount will be equivalent to receive within a year
+    to receive 100.000 at the end of each month for the next 12 months,
+    if the interest rate is 1.5% per month?
+
+    Data:
+    -   Monthly Payment of 100.000
+    -   Monthly Interest Rate of 1.5% (0.015)
+    -   Number of periods: 12 months.
+
+    Solution:
+
+        FutureValue -f 100000 -r 0.015 -n 12
+        1304121.1431
+
+    The Future Value of the Annuity is: _1.304.121,1431_
+
+-   How much we will have accumulated at the end of two years
+    in an account that pays us a monthly interest rate of 24%
+    per year, if we place 500 at the end of each month
+    for two years?
+
+    Data:
+    -   Monthly Payment of 500
+    -   Monthly Interest Rate of 24% (0.24)
+    -   Number of periods: 2 years * 12 months = 24 months.
+
+    Solution:
+
+        FutureValue -f 500 -r 0.24 -n 24
+        361730.4985
+
+    The Future Value of the Annuity is: _361.730,4985_
+
+-   What ammount will be equivalent to receive today,
+    compared to receive 100.000 at the end of every year
+    during 5 years, receiving the first payment within a year
+    if the interests are calculated annualy at the rate of 15%?
+
+    Data:
+    -   Annuity of 100.000
+    -   Annual Interest Rate of 15% (0.15)
+    -   Number of periods: 5 years.
+
+    Solution:
+
+        PresentValue -f 100000 -r 0.15 -n 5
+        335215.5098
+
+    The Future Value of the Annuity is: _335.215,5098_
+
+-   If at the beginning of each year we place 100.000 in an account,
+    how much we would have accumulated at the end of five years,
+    if we pay an interest annual rate of 18% per year?
+
+    Data:
+    -   Annuity of 100.000
+    -   Annual Interest Rate of 18% (0.18)
+    -   Number of periods: 5 years.
+
+    Solution:
+
+        FutureValue -f 100000 -r 0.18 -n 5 -e 1
+        844196.7517
+
+    The Future Value of the Annuity is: _844.196,7517_
+
+-   Mr. Kelly received a credit for 12.000.000 to cancel in twelve
+    monthly equal and consecutive installments, to an annually rate
+    of 18%. What amont the fees are going to be?
+
+    Data:
+    -   The Present Value is 12.000.000
+    -   Annual Interest Rate of 18% (0.18/12 = 0.015)
+    -   The number of periods is 12 months.
+
+    Solution:
+
+        GetFee -pv 12000000 -n 12 -r 0.015
+        1100159.9149
+
+    The fees are going to be of: _1.100.159,9149_

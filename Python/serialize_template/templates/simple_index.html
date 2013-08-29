@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Index</title>
+  </head>
+  <body>
+    <h1>Pages</h1>
+    <hr>
+	<ul>
+	{% for item in urls %}
+		<li><a href="{{ item }}">{{ item }}</a></li>
+	{% endfor %}
+	</ul>
+  </body>
+</html>
